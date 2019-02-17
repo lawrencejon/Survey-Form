@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+    <h1 id="title">Breath of The Wild Survey Form</h1>
+    <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+        <p id="description">Let us know about your Experience with Breath of The Wild.</p>
+        <table>
+            <!--name row-->
+            <tr>
+                <td>
+                    <label class="left-column" id="name-label" for="name">* Name: </label>
+                </td>
+                <td>
+                    <input id="name" type="text" placeholder="Enter Your Name" required>  
+                </td>
+            </tr>
+
+            <!--email row-->
+            <tr>
+                <td>
+                    <label id="email-label" for="email">* Email: </label>
+                </td>
+                <td>
+                    <input id="email" type="email" placeholder="Enter Your Email" required>
+                </td>
+            </tr>
+
+            <!--age row-->
+            <tr>
+                <td>
+                    <label id="number-label" for="number">* Age: </label>
+                </td>
+                <td>
+                    <input id="number" type="number" placeholder="Enter Your Age" min="1" max="125" required>
+                </td>
+            </tr>
+            
+            <!--time row-->
+            <tr>
+                <td>
+                    <label id="time-label" for="dropdown">* What time do you prefer to play?</label>
+                </td>
+                <td>
+                    <select id="dropdown" required>
+                        <option selected disabled>Select an Option</option>
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">afternoon</option>
+                        <option value="evening">evening</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <!--recommendation row-->
+            <tr>
+                <td>
+                *How likely are you to recommend Breath of the Wild to a friend?
+                </td>
+                <td>
+                    <label for="definitely"><input id="definitely" type="radio" name="choices" value="definitely" required>Definitely</label><br>
+                    <label for="maybe"><input id="maybe" type="radio" name="choices" value="maybe">Maybe</label><br>
+                    <label for="unsure"><input id="unsure" type="radio" name="choices" value="unsure">Not Sure</label>
+                </td>
+            </tr>
+
+            <!--What you like most row-->
+            <tr>
+                <td>
+                    <label id="like-most-label" for="like-most">*What do you like most about Breath of the Wild?</label>
+                </td>
+                <td>
+                    <select id="like-most" placeholder="Select an Option" required>
+                        <option selected disabled>Select an Option</option>
+                        <option value="exploration">Exploration</option>
+                        <option value="characters">Characters</option>
+                        <option value="story">Story</option>
+                        <option value="combat">Combat</option>
+                        <option value="sidequests">Side Quests</option>
+                        <option value="cooking">Cooking</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!--Things that should be improved row-->
+            <tr>
+                <td>
+                    <label id="checkbox" for="improvements">Things that should be improved<br>(Check all that apply):</label>
+                </td>
+                <td>
+                    <label><input id="improvements" type="checkbox" value="story">Story</label><br>
+                    <label><input id="improvements" type="checkbox" value="characters">Characters</label><br>
+                    <label><input id="improvements" type="checkbox" value="combat">Combat</label><br>
+                    <label><input id="improvements" type="checkbox" value="world">World</label><br>
+                    <label><input id="improvements" type="checkbox" value="difficulty">Difficulty</label><br>
+                    <label><input id="improvements" type="checkbox" value="graphics">Graphics</label><br>                          
+                </td>
+            </tr>
+
+            <!--Comments or Suggestions row-->
+            <tr id="textarea">
+                <td>
+                    <label id="comments-label" for="comments">Any Comments or Suggestions?</label>
+                </td>
+                <td>
+                    <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <!--Submit button-->
+        <button id="submit" type="submit">
+            Submit
+        </button>
+
+          
+        </form>
+    
+</body>
+<footer>
+    <h4><strong>Created by Jonathan Lawrence</strong></h4>
+</footer>
+</html>
